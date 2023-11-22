@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        li {
+            float: left;    /*li 항목들 가로정렬*/
+            list-style: none; /*리스트항목 앞에 동그라미 제거*/
+            padding: 20px;        }
+
+        li:nth-child(1) {/*li항목 자식들 중에 1번째*/
+            /*= li:first-child*/
+            background-color: red;
+        }
+        li:nth-child(2) {/*li항목 자식들 중에 2번째*/
+            background-color: orange;
+        }
+        li:nth-child(3) {/*li항목 자식들 중에 3번째*/
+            background-color: yellow;
+        }
+        li:nth-child(4) {/*li항목 자식들 중에 4번째*/
+            background-color: green;
+        }
+        li:nth-child(5) {/*li항목 자식들 중에 5번째*/
+            /*= li:last-child*/
+            background-color: blue;
+        }
+
+        li:first-child{/*li항목 자식들 중에 1번째*/
+            /*= li:nth-child(1)*/
+            border : 2px solid;
+        }
+        li:last-child{/*li항목 자식들 중에 5번째*/
+            /*= li:nth-child(5)*/
+            border : 2px solid;
+        }
+    </style>
+</head>
+
+
+<body>
+    <ul>
+        <li>빨강</li>
+        <li>주황</li>
+        <li>노랑</li>
+        <li>녹색</li>
+        <li>파랑</li>
+    </ul>
+</body>
+
+</html>
